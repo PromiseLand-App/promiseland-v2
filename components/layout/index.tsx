@@ -1,6 +1,6 @@
 import { FADE_IN_ANIMATION_SETTINGS } from "@/lib/constants";
 import { AnimatePresence, motion } from "framer-motion";
-import { useSession } from "next-auth/react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -20,7 +20,6 @@ export default function Layout({
   };
   children: ReactNode;
 }) {
-  const { data: session, status } = useSession();
   const { SignInModal, setShowSignInModal } = useSignInModal();
   const scrolled = useScroll(50);
 
@@ -47,7 +46,7 @@ export default function Layout({
             ></Image>
             <p>Precedent</p>
           </Link>
-          <div>
+          {/* <div>
             <AnimatePresence>
               {!session && status !== "loading" ? (
                 <motion.button
@@ -61,7 +60,7 @@ export default function Layout({
                 <UserDropdown />
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
         </div>
       </div>
       <main className="flex w-full flex-col items-center justify-center py-32">
