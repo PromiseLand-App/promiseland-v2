@@ -86,6 +86,7 @@ const Panel = () => {
           profiles.map((profile) => (
             <SuggestedProfileCard key={profile.profileID} {...profile} />
           ))}
+          
       </div>
     </div>
   );

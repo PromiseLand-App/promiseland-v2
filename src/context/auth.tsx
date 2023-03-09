@@ -81,6 +81,7 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
     const fetch = async () => {
       try {
         /* Fetch primary profile posts */
+        // eslint-disable-next-line react-hooks/rules-of-hooks
         let query = useCancellableQuery({
           query: PRIMARY_PROFILE_ESSENCES,
           variables: {

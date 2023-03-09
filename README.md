@@ -1,90 +1,172 @@
-<a href="https://precedent.dev">
-  <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/api/og">
-  <h1 align="center">Precedent</h1>
-</a>
-
-<p align="center">
-  Building blocks for your Next project
-</p>
-
-<p align="center">
-  <a href="https://twitter.com/steventey">
-    <img src="https://img.shields.io/twitter/follow/steventey?style=flat&label=steventey&logo=twitter&color=0bf&logoColor=fff" alt="Steven Tey Twitter follower count" />
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/PromiseLand-App">
+    <img src="./public/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <a href="https://github.com/steven-tey/precedent">
-    <img src="https://img.shields.io/github/stars/steven-tey/precedent?label=steven-tey%2Fprecedent" alt="Precedent repo star count" />
+
+  <h3 align="center">PromiseLand</h3>
+
+  <p align="center">
+    PromiseLand is an Web3 content NFT marketplace that creators can sell their digital products to their audience in crypto.
+    <br />
+    <a href="https://promiseland.app"><strong>Check out our website! »</strong></a>
+    <br />
+    <br />
+    <a href="">View Demo Video</a>
+    ·
+
+     ·
+
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+PromiseLand is an Web3 content NFT marketplace that creators can sell their digital products to their audience in crypto. Kinda like alternative of Gumroad.
+
+<div align="center">
+  <a href="https://promiseland.app" >
+    <img src="./public/demo1.jpg" alt="Logo" width="1200" height="520">
   </a>
-</p>
+</div>
 
-<p align="center">
-  <a href="#introduction"><strong>Introduction</strong></a> ·
-  <a href="#one-click-deploy"><strong>One-click Deploy</strong></a> ·
-  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
-  <a href="#author"><strong>Author</strong></a>
-</p>
-<br/>
+### Problem Statement
 
-## Introduction
+- The traditional social media platform where the content creators are hard to get rewarded if they created some viral content if they are not sponsored. Overall, they are hard to get paid for creating popular content.
+- For the content creators’ followers, if they are elderly supporters, they are hard to share the success of the content creator they supported gets successful.
 
-Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project.
+### Proposed Solution
 
-## One-click Deploy
+- PromiseLand is built for content creators and their fans. Content creators can create their work most likely pictures as NFT to their own NFT collections. They can upload any images they want including their artwork, photograph, or just a selfie as NFT which is stored permanently in blockchain and IPFS. Their NFT can be traded and liked on our platform.
+- But not only content creators can be benefited by selling their digital content as NFT. Their fans can also be rewarded by liking their favorite content. The earlier they like the NFT, they will get a higher reward after the NFT gets sold.
 
-You can deploy this template to Vercel with the button below:
+## How it works
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsteven-tey%2Fprecedent&project-name=precedent&repository-name=precedent&demo-title=Precedent&demo-description=An%20opinionated%20collection%20of%20components%2C%20hooks%2C%20and%20utilities%20for%20your%20Next%20project.&demo-url=https%3A%2F%2Fprecedent.dev&demo-image=https%3A%2F%2Fprecedent.dev%2Fapi%2Fog&env=DATABASE_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fsteven-tey%2Fprecedent%2Fblob%2Fmain%2F.env.example)
+In PromiseLand, any user with a crypto wallet can post their favorite image like digital art, photograph, or even memes in PromiseLand as "NFT" with only the cost of a gas fee. The user's supporter can like their favorite content by clicking like button to the NFT post with a small tip. When the NFT post got sold, all the tips will be transferred to the seller and likers can earn some shares from the sale using our promiseland smart contract.
 
-You can also clone & create this repo locally with the following command:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```bash
-npx create-next-app precedent --example "https://github.com/steven-tey/precedent"
-```
+### Support Chains
 
-## Tech Stack + Features
+- Polygon Mumbai
+- Polygon Mainnet
+- Optimism
+- Goerli Testnet
 
-https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Frameworks
+<!-- GETTING STARTED -->
 
-- [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
-- [Auth.js](https://authjs.dev/) – Handle user authentication with ease with providers like Google, Twitter, GitHub, etc.
-- [Prisma](https://www.prisma.io/) – Typescript-first ORM for Node.js
+## Getting Started
 
-### Platforms
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-- [Vercel](https://vercel.com/) – Easily preview & deploy changes with git
-- [Railway](https://railway.app/) – Easily provision a PostgreSQL database (no login required)
+### Prerequisites
 
-### UI
+This is an example of how to list things you need to use the software and how to install them.
 
-- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development
-- [Radix](https://www.radix-ui.com/) – Primitives like modal, popover, etc. to build a stellar user experience
-- [Framer Motion](https://framer.com/motion) – Motion library for React to animate components with ease
-- [Lucide](https://lucide.dev/) – Beautifully simple, pixel-perfect icons
-- [`@next/font`](https://nextjs.org/docs/basic-features/font-optimization) – Optimize custom fonts and remove external network requests for improved performance
-- [`@vercel/og`](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation) – Generate dynamic Open Graph images on the edge
-- [`react-wrap-balancer`](https://github.com/shuding/react-wrap-balancer) – Simple React component that makes titles more readable
+- yarn
+  ```sh
+  yarn
+  yarn run dev
+  ```
 
-### Hooks and Utilities
+### Run the App
 
-- `useIntersectionObserver` –  React hook to observe when an element enters or leaves the viewport
-- `useLocalStorage` – Persist data in the browser's local storage
-- `useScroll` – React hook to observe scroll position ([example](https://github.com/steven-tey/precedent/blob/main/components/layout/index.tsx#L25))
-- `nFormatter` – Format numbers with suffixes like `1.2k` or `1.2M`
-- `capitalize` – Capitalize the first letter of a string
-- `truncate` – Truncate a string to a specified length
-- [`use-debounce`](https://www.npmjs.com/package/use-debounce) – Debounce a function call / state update
+1. Clone the repo
+   ```sh
+   git clone https://github.com/PromiseLand-App/promiseland-frontend
+   ```
+2. Install packages
+   ```sh
+   yarn install
+   ```
+3. Add your environment variables in `.env`
 
-### Code Quality
+   ```sh
+   NEXT_PUBLIC_WEB3_STORAGE_API_TOKEN=
+   NEXT_PUBLIC_NFTPORT_API_KEY=
+   ```
 
-- [TypeScript](https://www.typescriptlang.org/) – Static type checker for end-to-end typesafety
-- [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
-- [ESLint](https://eslint.org/) – Pluggable linter for Next.js and TypeScript
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Miscellaneous
+<!-- ROADMAP -->
 
-- [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
+## Roadmap
 
-## Author
+- [x] Basic Contract
+- [x] MVP Launched
+- [ ] Refine the contract and product
+- [ ] Launch V1.0 Beta
+- [ ] PromiseLand Token
+- [ ] PromiseLand DAO
+- [ ] Launch mobile app
 
-- Steven Tey ([@steventey](https://twitter.com/steventey))
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Promiseland is open source. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Bruce Wang - [@brucewangdev](https://twitter.com/brucewangdev) - brucewangyq@gmail.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Related Link
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+- [Main Website](https://promiseland.app)
+- [GitHub PromiseLand](https://github.com/PromiseLand-App)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+◊

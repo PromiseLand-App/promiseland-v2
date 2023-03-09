@@ -1,12 +1,3 @@
-import Card from "@/components/home/card";
-import Layout from "@/components/layout";
-import Balancer from "react-wrap-balancer";
-import { motion } from "framer-motion";
-import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
-import ComponentGrid from "@/components/home/component-grid";
-import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import type { NextPage } from "next";
 import { AuthContext } from "../context/auth";
@@ -17,8 +8,9 @@ import { IPostCard } from "../types";
 import { useLazyQuery } from "@apollo/client";
 import { PRIMARY_PROFILE_ESSENCES } from "../graphql";
 import Loading from "@/components/Loading";
+import Layout from "@/components/layout";
 
-export default function Home() {
+const DiscoverPage: NextPage = () => {
   const { address, accessToken } = useContext(AuthContext);
   const [getEssencesByFilter] = useLazyQuery(PRIMARY_PROFILE_ESSENCES);
   const [featuredPosts, setFeaturedPosts] = useState<IPostCard[]>([]);
@@ -55,22 +47,35 @@ export default function Home() {
 
   return (
     <Layout>
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className="posts">
-          <div>
-            {featuredPosts.length > 0 &&
-              featuredPosts.map((post) => (
-                <PostCard
-                  key={`${post.createdBy.profileID}-${post.essenceID}`}
-                  {...post}
-                  isIndexed={true}
-                />
-              ))}
+      <div className="container">
+        <Navbar />
+        <div className="wrapper">
+          <div className="wrapper-content">
+            <h1 className="text-2xl font-bold">Recommendations</h1>
+            {loading ? (
+              <Loading />
+            ) : (
+              <div className="posts">
+                <div>
+                  {featuredPosts.length > 0 &&
+                    featuredPosts.map((post) => (
+                      <PostCard
+                        key={`${post.createdBy.profileID}-${post.essenceID}`}
+                        {...post}
+                        isIndexed={true}
+                      />
+                    ))}
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="wrapper-details">
+            <Panel />
           </div>
         </div>
-      )}
+      </div>
     </Layout>
   );
-}
+};
+
+export default DiscoverPage;

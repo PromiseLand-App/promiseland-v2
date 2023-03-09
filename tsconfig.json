@@ -6,13 +6,13 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
-      "@/lib/*": ["lib/*"],
-      "@/styles/*": ["styles/*"],
-      "@/graphql/*": ["graphql/*"],
-      "@/context/*": ["context/*"],
-      "@/types/*": ["types/*"]
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/graphql/*": ["src/graphql/*"],
+      "@/context/*": ["src/context/*"],
+      "@/types/*": ["src/types/*"]
     },
     "strict": true,
     "forceConsistentCasingInFileNames": true,

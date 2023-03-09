@@ -16,7 +16,7 @@ function CollectBtn({
   const { accessToken, connectWallet, checkNetwork } = useContext(AuthContext);
   const { handleModal } = useContext(ModalContext);
   const [createCollectEssenceTypedData] = useMutation(
-    CREATE_COLLECT_ESSENCE_TYPED_DATA
+    CREATE_COLLECT_ESSENCE_TYPED_DATA,
   );
   const [relay] = useMutation(RELAY);
   const [stateCollect, setStateCollect] = useState(isCollectedByMe);
@@ -90,7 +90,7 @@ function CollectBtn({
 
       /* Display success message */
       handleModal("success", "Post was collected!");
-    } catch (error) {
+    } catch (error: any) {
       /* Display error message */
       const message = error.message as string;
       handleModal("error", message);
@@ -99,7 +99,7 @@ function CollectBtn({
 
   return (
     <button
-      className="collect-btn hover:bg-stone-900 hover:text-white ease-in duration-100"
+      className="collect-btn duration-100 ease-in hover:bg-stone-900 hover:text-white"
       onClick={handleOnClick}
       disabled={stateCollect}
     >
